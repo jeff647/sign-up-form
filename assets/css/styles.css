@@ -1,14 +1,6 @@
-/* html {
-  height: 100%;
-  width: 100%;
-}
-
 body {
-  min-width: 100%;
-  min-height: 100%;
   font-family: "Source Sans 3", sans-serif;
-  overflow: hidden;
-} */
+}
 
 h1,
 h2,
@@ -37,16 +29,40 @@ div.image-logo-sidebar {
   background-image: url("/assets/images/background.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  /* Flex to position child photo credit element */
+  display: flex;
+  flex-direction: column;
 }
 
-div.detail {
+div.logo {
+  margin-top: 250px;
+  padding: 1em 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+div.bottom-image-credit {
+  /* Move element to bottom */
+  margin-top: auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+div.detail-section {
   grid-area: detail;
   background-color: aqua;
 }
 
-div.form {
+div.form-section {
   grid-area: form;
-  background-color: blue;
+  background-color: rgb(199, 226, 156);
+}
+
+form.sign-up ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 div.action-section {
