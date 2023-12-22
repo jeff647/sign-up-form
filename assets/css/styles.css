@@ -11,6 +11,25 @@ h6 {
   font-family: "Quicksand", sans-serif;
 }
 
+.remove-padding-margin{
+  padding: 0;
+  margin: 0;
+}
+
+.large-padding-top{
+  padding-top: 3em;
+}
+
+.large-font-size{
+  font-size: 1.5em;
+}
+
+div.detail-section,
+div.form-section,
+div.action-section {
+  padding: 2em 3em;
+}
+
 div.grid-container {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -47,12 +66,6 @@ div.bottom-image-credit {
   margin-top: auto;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.75);
-}
-
-div.detail-section,
-div.form-section,
-div.action-section {
-  padding: 0 3em;
 }
 
 div.detail-section {
@@ -111,7 +124,7 @@ form.sign-up input:focus {
   outline: none !important;
   border: 1px solid blue !important;
   /* outline: 1px solid blue !important; */
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, .45);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.45);
 }
 
 div.action-section {

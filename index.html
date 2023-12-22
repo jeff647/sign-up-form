@@ -43,46 +43,62 @@
         </div>
       </div>
       <div class="detail-section">
-        <p>
+        <p class="remove-padding-margin large-padding-top large-font-size">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam,
           culpa voluptates voluptatum fuga voluptas enim consectetur autem saepe
           numquam dolore sunt, dolor dolorum cupiditate dignissimos eligendi
           rerum. Recusandae, odit est?
         </p>
+        <p class="large-font-size">Sign up <i>now</i> to get started.</p>
       </div>
       <div class="form-section">
-        <h1>Sign-up now!</h1>
-        <form class="sign-up" action="#" method="post">
+        <h1 class="remove-padding-margin">Sign up now!</h1>
+        <p>* Required field</p>
+        <form if="sign-up-form" class="sign-up" action="#" method="post">
           <ul>
             <li>
-              <label for="first-name">FIRST NAME</label>
-              <input type="text" id="first-name" name="user-first-name" />
+              <label for="first-name">FIRST NAME *</label>
+              <input
+                type="text"
+                id="first-name"
+                name="user-first-name"
+                required
+              />
             </li>
             <li>
               <label for="last-name">LAST NAME</label>
               <input type="text" id="last-name" name="user-last-name" />
             </li>
             <li>
-              <label for="email">EMAIL</label>
-              <input type="email" id="email" name="user-email" />
+              <label for="email">EMAIL *</label>
+              <input type="email" id="email" name="user-email" required />
             </li>
             <li class="placeholder"></li>
             <li>
-              <label for="password">PASSWORD</label>
-              <input type="password" id="password" name="user-password" />
+              <label for="password">PASSWORD *</label>
+              <input
+                type="password"
+                id="password"
+                name="user-password"
+                required
+              />
             </li>
             <li>
-              <label for="password_confirm">CONFIRM PASSWORD</label>
+              <label for="password_confirm">CONFIRM PASSWORD *</label>
               <input
                 type="password"
                 id="password_confirm"
                 name="user-password-confirmed"
+                required
               />
             </li>
           </ul>
         </form>
       </div>
-      <div class="action-section"></div>
+      <div class="action-section">
+        <button type="button" form="sign-up-form">Submit</button>
+        <p>Already have an account?&nbsp;&nbsp;<a href="">Log in</a></p>
+      </div>
       <footer>
         <span>Copyright &copy; 2023 Juhyun O</span>
         <a
