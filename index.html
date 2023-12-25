@@ -49,12 +49,14 @@
           numquam dolore sunt, dolor dolorum cupiditate dignissimos eligendi
           rerum. Recusandae, odit est?
         </p>
-        <p class="large-font-size">Sign up <em>now</em> &nbsp;to get started.</p>
+        <p class="large-font-size">
+          Sign up <em>now</em> &nbsp;to get started.
+        </p>
       </div>
       <div class="form-section">
         <h1 class="remove-padding-margin">Sign up now!</h1>
         <p>* Required field</p>
-        <form if="sign-up-form" class="sign-up" action="#" method="post">
+        <form id="sign-up-form" class="sign-up" action="#" method="post">
           <ul>
             <li>
               <label for="first-name">FIRST NAME</label>
@@ -70,11 +72,14 @@
             </li>
             <li class="placeholder"></li>
             <li>
+              <!-- pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}" -->
               <label for="password">PASSWORD *</label>
               <input
                 type="password"
                 id="password"
                 name="user-password"
+                pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#\$%\^&*_=\+\-]).{8,}"
+                title="Must contain at least one special character of (! @ # $ % ^ & * _ = + -), one number and one uppercase and lowercase letter, and at least 8 or more characters"
                 required
               />
             </li>
@@ -83,7 +88,7 @@
               <input
                 type="password"
                 id="password_confirm"
-                name="user-password-confirmed"
+                name="user-password-confirm"
                 required
               />
             </li>
@@ -91,7 +96,7 @@
         </form>
       </div>
       <div class="action-section">
-        <button type="button" form="sign-up-form">Create Account</button>
+        <button type="submit" form="sign-up-form">Create Account</button>
         <p>Already have an account?&nbsp;&nbsp;<a href="">Log in</a></p>
       </div>
       <footer>
