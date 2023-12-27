@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="./assets/js/script.js"></script>
     <title>Sign-up Form</title>
   </head>
   <body>
@@ -72,7 +73,6 @@
             </li>
             <li class="placeholder"></li>
             <li>
-              <!-- pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}" -->
               <label for="password">PASSWORD *</label>
               <input
                 type="password"
@@ -81,6 +81,7 @@
                 pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#\$%\^&*_=\+\-]).{8,}"
                 title="Must contain at least one special character of (! @ # $ % ^ & * _ = + -), one number and one uppercase and lowercase letter, and at least 8 or more characters"
                 required
+                onkeyup="passwordValidate()"
               />
             </li>
             <li>
@@ -90,6 +91,7 @@
                 id="password_confirm"
                 name="user-password-confirm"
                 required
+                onkeyup="passwordValidate()"
               />
             </li>
           </ul>
