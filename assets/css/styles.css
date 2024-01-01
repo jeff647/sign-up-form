@@ -128,7 +128,6 @@ form.sign-up input:invalid {
 form.sign-up input:focus {
   outline: none !important;
   border: 1px solid blue !important;
-  /* outline: 1px solid blue !important; */
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.45);
 }
 
@@ -157,9 +156,25 @@ div.action-section a {
 
 footer {
   grid-area: footer;
-  background-color: purple;
+  background-color: rgb(212, 212, 212);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1em;
+}
+
+@media only screen and (max-width: 550px) {
+  div.grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "image-sidebar"
+      "detail"
+      "form"
+      "action"
+      "footer";
+  }
+  div.logo{
+    margin-top: 100px;
+  }
 }
