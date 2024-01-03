@@ -51,7 +51,7 @@ div.grid-container {
 
 div.image-logo-sidebar {
   grid-area: image-sidebar;
-  background-image: url("/assets/images/background.png");
+  background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   /* Flex to position child photo credit element */
@@ -174,7 +174,7 @@ footer {
       "action"
       "footer";
   }
-  div.logo{
+  div.logo {
     margin-top: 100px;
   }
 }
